@@ -1,0 +1,34 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8"/>
+<style>
+body{
+background-color:#f2f2a2;
+}
+h1{ text-align:center;}
+form{
+border:2px solid red; background-color:#8b8b13; padding:10px;}
+form{width:300px; margin:0 auto;}
+form > div { display: block; margin:10px; }
+label{ width:100px; text-align:left; float:left;}
+span { display:block; }
+.group{ display:table; }
+select{ width:100px;}
+input[type="submit"]{ text-align:center; margin:0 auto; padding:5px 10px;}
+</style>
+</head>
+<body>
+
+<h1>Login</h1>
+<form action="Comprueba_usuario.jsp" method="post" >
+<div><label for="usuario">Usuario: </label><input id="usuario" type="text" name="usuario" /></div>
+<div><label for="contra">Contaseña: </label><input id="contra" type="text" name="contra" /></div>
+
+
+<div><center><input type="submit" name="button" value="Login" /></center></div>
+
+
+</form>
+</body>
+</html>

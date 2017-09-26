@@ -1,0 +1,53 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8"/>
+<style>
+body{
+background-color:#f2f2a2;
+}
+h1{ text-align:center;}
+form{
+border:2px solid red; background-color:#8b8b13; padding:10px;}
+form{width:300px; margin:0 auto;}
+form > div { display: block; margin:10px; }
+label{ width:100px; text-align:left; float:left;}
+span { display:block; }
+.group{ display:table; }
+select{ width:100px;}
+input[type="submit"]{ text-align:center; margin:0 auto; padding:5px 10px;}
+</style>
+</head>
+<body>
+
+<h1>Registro</h1>
+<form action="Recoge_datos.jsp" method="post" >
+<div><label for="nombre">Nombre: </label><input id="nombre" type="text" name="nombre" /></div>
+<div><label for="apellido">Apellido: </label><input id="apellido" type="text" name="apellido" /></div>
+<div><label for="usuario">Usuario: </label><input id="usuario" type="text" name="usuario" /></div>
+<div><label for="contra">Contaseña: </label><input id="contra" type="text" name="contra" /></div>
+<div><label for="pais">Pais: </label>
+<select name="pais" id="">
+	<option>Mexico</option>
+	<option>Colombia</option>
+	<option>Chile</option>
+	<option>Peru</option>
+	<option>Argentina</option>
+	<option>Espana</option>
+</select>
+</div>
+<div><label>Tecnología: </label>
+<div class="group">
+<span><input type="radio" name="tecnologias" value="java" id="tecnologias_0"/>Java</span>
+<span><input type="radio" name="tecnologias" value="php" id="tecnologias_1"/>Php</span>
+<span><input type="radio" name="tecnologias" value="javascript" id="tecnologias_2"/>Javascript</span>
+</div>
+
+
+</div>
+<div><center><input type="submit" name="button" value="Enviar" /></center></div>
+
+
+</form>
+</body>
+</html>
